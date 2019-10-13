@@ -1,8 +1,10 @@
+# win32clipboard is part of a package called pywin32, install using
+# pip install pywin32
 
 import win32clipboard
 import subprocess
 
-filePath = "V:\\ViJay\\CompetitiveCoding\\Hackerrank\\PythonBasics\\"
+filePath = "C:\\"
 win32clipboard.OpenClipboard()
 clipboardData = win32clipboard.GetClipboardData()
 win32clipboard.CloseClipboard()
@@ -16,6 +18,7 @@ fileName = clipboardData + ".py"
 
 f = open(filePath + fileName, "w+")
 f.write("# python file created using cpProductivityScript.py")
+f.write("# https://github.com/vijayanand-pg/python-scripts/")
 f.write("\n\n\n\n\n# --signature")
 f.close()
 
